@@ -24,7 +24,11 @@ const Home = () => {
   React.useEffect(() => {
     const fetchData = async () => {
       try {
-        const { count, results } = await getPokemons({ limit: PER_PAGE, offset: (page - 1) * PER_PAGE });
+        const { count, results } = await getPokemons({
+          limit: PER_PAGE,
+          offset: (page - 1) * PER_PAGE,
+          q: router.query.q || ''
+        });
         totalRef.current = count;
         setPokemons(results);
       } catch (error) {
