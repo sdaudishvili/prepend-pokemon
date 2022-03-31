@@ -12,4 +12,4 @@ One way to do a search would be to get a complete list and filter it on client s
 
 Another challenge was displaying images on the list page.
 
-In the assignment, there was mentioned that I should display the image on the list page, however the API route that gives the list of the pokemons ([https://pokeapi.co/api/v2/pokemon])(https://pokeapi.co/api/v2/pokemon) does not include the image of the pokemon. So I decided to fetch detailed info concurently using [swr](https://swr.vercel.app/) package for each visible pokemon and take image from there.
+In the assignment, there was mentioned that I should display the image on the list page, however the API route that gives the list of the pokemons [https://pokeapi.co/api/v2/pokemon](https://pokeapi.co/api/v2/pokemon) does not include the image of the pokemon. So I decided to fetch detailed info concurently using [swr](https://swr.vercel.app/) package for each visible pokemon and take image from there.
