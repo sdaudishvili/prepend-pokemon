@@ -19,7 +19,7 @@ const Search = (props) => {
   }, []);
 
   React.useEffect(() => {
-    if (mounted && debouncedValue.length > 2) {
+    if (mounted && (debouncedValue.length > 2 || debouncedValue === '')) {
       onSearch(debouncedValue);
     }
   }, [debouncedValue]);
